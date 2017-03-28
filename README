@@ -1,0 +1,59 @@
+README:
+-------
+DISCOVER-codedc consists of an encoder and decoder to compress video data based
+on the Distributed Video Coding principles.
+The software with test data can be downloaded at http://www.discoverdvc.org
+For questions, notes and bug reports please contact klomp@tnt.uni-hannover.de
+
+
+Files:
+------
+H264encoder.exe                - H264 Intra codec (http://iphome.hhi.de/suehring/tml)
+discoverdec                    - DISCOVER-decoder
+discoverenc                    - DISCOVER-encoder
+foreman_176x144_15_orig_01.yuv - QCIF test sequence
+foreman_decoder.cfg            - Decoder configuration
+foreman_encoder.cfg            - Encoder configuration
+foreman_keyframe.cfg           - Sequence dependend configuration for the Intra codec
+h264.cfg                       - H264 Intra codec configuration
+ldpcmatrices/                  - Matrices for LDPC coding
+
+
+Encoding:
+---------
+The encoder can be executed by calling:
+  discoverenc foreman_encoder.cfg
+
+All parameters within the configuration file can also be set as commandline parameter:
+  discoverenc --Qindex=4 foreman_encoder.cfg
+
+
+Decoding:
+---------
+The decoder can be executed by calling:
+  discoverdec foreman_decoder.cfg
+
+All parameters within the configuration file can also be set as commandline parameter:
+  discoverdec --FrameRate=15 foreman_decoder.cfg
+
+
+Output:
+-------
+bitstream.wz - Bitstream containing the LDPC bits and further configuration information (e.g. frame width and height)
+data.txt - Unused output from the H.264 Intra codec
+foreman_decoded01.yuv - Decoded sequence, the number represents the quantisation index
+foreman_keyf_infoQ1.txt - PSNR and rate results for the key (intra) frames. Used to calculate the total bitrate and the average PSNR of the coded sequence.
+foreman_keyf_infoQ1.yuv - Decoded key (intra) frames. Used to generate the side information at the decoder.
+foreman_keyframe.cfg - Contains the mapping between the 8 quantisation matrix indices of the DISCOVER-codec and the quantisation parameter of the H.264/AVC codec to achieve similar PSNR results. Furthermore, the filenames of the decoded key frames and the corresponding PSNR results are defined.
+foreman_psnr_data.txt - PSNR results and bitrates of each key and Wyner-Ziv frame. At the end, the average PSNR and the total bitrate are written.
+leakybucketparam.cfg - Unused output from the H.264 Intra codec
+log.dat - Unused output from the H.264 Intra codec
+stats.dat - Unused output from the H.264 Intra codec
+test.264 - Unused output from the H.264 Intra codec
+
+Note:
+The DISCOVER-codec writes ALL parity check bits into bitstream.wz. Rate control is achieved at the decoder, since the decoder does not use
+all available parity bits.
+
+
+

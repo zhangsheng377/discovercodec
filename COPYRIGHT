@@ -1,0 +1,38 @@
+DISCOVER-codec - Software for Distributed Video Coding
+
+This software is called DISCOVER-codec and is the copyrighted work of the research
+project "Distributed coding for video services" (DISCOVER), FP6-2002-IST-C contract
+no.: 015314 of the European Commission. It cannot be copied, reproduced nor
+distributed without the consent of the project consortium.
+
+  1) The DISCOVER software started from the so-called IST-WZ software developed at
+     the Image Group from Instituto Superior Técnico (IST), Lisbon-Portugal
+     (http://amalia.img.lx.it.pt/), by Catarina Brites, João Ascenso, and Fernando
+     Pereira.
+  2) Portions of the IST-WZ software are based on the work of Mathys Walma, which is
+     free to use for academic and personal purposes only (walma@sce.carleton.ca).
+     These portions are identified in the IST-WZ and DISCOVER softwares.
+  3) Portions of the DISCOVER-codec are based on David Varadoyan's (varodayan@stanford.edu),
+     code taken from http://www.stanford.edu/~divad/software.html.
+
+For more information see the official DISCOVER web site (http://www.discoverdvc.org)
+and contact the project coordinator Luis Torres (luis@gps.tsc.upc.edu).
+
+
+                            NO WARRANTY
+
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND
+PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE,
+YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY
+COPYRIGHT HOLDER BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL,
+INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE
+OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE
+WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
